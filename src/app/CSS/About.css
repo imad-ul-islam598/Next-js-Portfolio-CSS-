@@ -1,0 +1,126 @@
+/* General Section Styling */
+.about-section {
+  position: relative;
+  min-height: 80vh;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, black, #1c0000, black);
+  color: white;
+  overflow: hidden;
+}
+
+.lightning {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Container Styling */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Profile Image Styling */
+.profile-image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.05);
+}
+
+.profile-border {
+  position: absolute;
+  inset: 0;
+  border: 3px outset #dc2626;
+  border-radius: 50%;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Text Content Styling */
+.about-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.contact-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #dc2626;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #c21325;
+}
+
+
+@media (min-width: 1024px) {
+  .about-text {
+    text-align: left;
+  }
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

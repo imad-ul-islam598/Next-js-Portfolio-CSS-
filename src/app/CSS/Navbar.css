@@ -1,0 +1,97 @@
+/* navbar.css */
+
+/* General Styles */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #00000031;
+  color: white;
+  /* box-shadow: 0 3px 3px rgba(177, 13, 13, 0.178); */
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-radius: 0 0 10px 10px;
+  z-index: 50;
+}
+
+.navbar:hover {
+  border-bottom: 2px solid #b91c1c;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem; /* px-6 py-4 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Brand Logo */
+.navbar-brand {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 8px rgb(255, 255, 255); /* Glowing effect */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: none;
+}
+
+.navbar-links .navbar-link {
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.375rem; /* rounded */
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.1); /* Light shine on links */
+}
+
+.navbar-links .navbar-link:hover {
+  background: #b91c1c; /* More frosty hover */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Menu */
+.navbar-menu-button {
+  font-size: 1.875rem; /* text-3xl */
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Menu Background */
+.navbar-mobile-menu {
+  background: #00000031;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: white;
+  padding: 1rem 1.5rem; /* px-6 py-4 */
+}
+
+.navbar-mobile-menu .navbar-mobile-link {
+  display: block;
+  padding: 0.5rem 1rem; /* py-2 */
+  border-radius: 0.375rem; /* rounded */
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.navbar-mobile-menu .navbar-mobile-link:hover {
+  background-color: rgba(46, 18, 18, 0.25); /* More glow */
+}
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem; /* space-x-6 */
+  }
+
+  .navbar-menu-button {
+    display: none;
+  }
+}

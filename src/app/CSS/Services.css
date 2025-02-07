@@ -1,0 +1,97 @@
+/* Services Section */
+.services-section {
+  padding: 4rem 2rem;
+  background-color: #0f0f0f; /* Matches bg-background */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Header */
+.services-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #ffffff; /* Ensures white text */
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Service Card */
+.service-card {
+  background-color: #1f2937; /* Matches bg-gray-800 */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.service-card:hover {
+  transform: translateY(-0.5rem); /* Lift effect */
+  background-color: #374151; /* Matches bg-gray-700 */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Card Content */
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover h3 {
+  color: #dc2626; /* Matches text-red-500 */
+}
+
+.service-card p {
+  margin: 0.75rem 0;
+  color: #9ca3af; /* Matches text-gray-400 */
+}
+
+/* Button */
+.service-card button {
+  background: none;
+  border: none;
+  color: #dc2626; /* Matches text-red-500 */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover button {
+  color: #ef4444; /* Matches text-red-600 */
+}
+
+/* Media Queries */
+
+/* For medium screens and above (768px) */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+}
+
+/* For small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 2rem 1rem;
+  }
+
+  .services-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.125rem;
+  }
+}

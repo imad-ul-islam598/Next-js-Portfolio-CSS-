@@ -1,0 +1,27 @@
+/* Footer Container */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #111826; /* Matches bg-gray-900 */
+  color: #9ca3af; /* Matches text-gray-400 */
+  font-size: 0.875rem; /* Matches text-sm */
+  text-align: center;
+}
+
+/* Heart Icon */
+.footer .heart {
+  color: #dc2626; /* Matches text-red-600 */
+}
+
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 640px) {
+  .footer {
+    flex-direction: row; /* Align items in a row on larger screens */
+    text-align: left;
+  }
+}
