@@ -12,9 +12,9 @@ const Projects = () => {
       {/* Project Grid */}
       <div className="project-grid">
         {/* Project 1 */}
-        <div className="project-card">
+        <div className="roject-card">
           <Image
-            src="/project1.jpg" // Replace with your image path
+            src="/Project1.jpg"
             alt="Project 1"
             width={500}
             height={300}
@@ -31,7 +31,7 @@ const Projects = () => {
         {/* Project 2 */}
         <div className="project-card">
           <Image
-            src="/project2.jpg" // Replace with your image path
+            src="/Project2.jpg" 
             alt="Project 2"
             width={500}
             height={300}
@@ -51,7 +51,7 @@ const Projects = () => {
         {/* Project 3 */}
         <div className="project-card">
           <Image
-            src="/project3.jpg" // Replace with your image path
+            src="/Project3.jpg" 
             alt="Project 3"
             width={500}
             height={300}
