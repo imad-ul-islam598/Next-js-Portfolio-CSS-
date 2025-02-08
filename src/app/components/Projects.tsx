@@ -12,7 +12,7 @@ const Projects = () => {
       {/* Project Grid */}
       <div className="project-grid">
         {/* Project 1 */}
-        <div className="roject-card">
+        <div className="project-card">
           <Image
             src="/Project1.jpg"
             alt="Project 1"
